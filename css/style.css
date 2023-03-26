@@ -412,15 +412,18 @@ h6,
     opacity: 0;
 }
 
-.team-item:hover {
+.team-item:hover,
+.projects-item:hover {
     box-shadow: 0 0 30px #DDDDDD;
 }
 
-.team-item:hover .team-social {
+.team-item:hover .team-social,
+.projects-item:hover .team-social {
     background: rgba(9, 30, 62, .7);
 }
 
-.team-item:hover .team-social a.btn:first-child {
+.team-item:hover .team-social a.btn:first-child,
+.projects-item:hover .team-social a.btn:first-child {
     opacity: 1;
     margin-top: 0;
     transition: .3s 0s;
@@ -448,12 +451,18 @@ h6,
     height: 400px;
 }
 
+.projects-item{
+    height: 288px;
+}
+
 .team-item .team-img img,
+.projects-item .team-img img,
 .blog-item .blog-img img  {
     transition: .5s;
 }
 
 .team-item:hover .team-img img,
+.projects-item:hover .team-img img,
 .blog-item:hover .blog-img img {
     transform: scale(1.15);
 }

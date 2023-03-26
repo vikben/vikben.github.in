@@ -1,5 +1,25 @@
+
 (function ($) {
     "use strict";
+    // smooth scroll
+
+    $('.nav-link').click(function(event){
+        $('.nav-link').removeClass('active')
+		if (this.hash !== "") {
+			event.preventDefault();
+			var hash = this.hash;
+
+			$('html, body').animate({
+				scrollTop: $(hash).offset().top - 70
+			}, 200, function(){
+				//window.location.hash = hash;
+			});
+            $(this).addClass('active')
+      	} 
+	});
+
+
+
 
     // Spinner
     var spinner = function () {
